@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 브라우저 주소창 감추기 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 바탕화면에 아이콘 만들기 (for HTML5 (index.html)) -->
+    <link rel="shortcut icon" href="imgsrc/개.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="imgsrc/개.png">
+    <link rel="icon" href="icon.png">
+    <title>동물병원 찾기! </title>
+    <script src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="event_info.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">경기도 동물병원 검색</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Saaad9">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.acmicpc.net/user/ehdgnstla">BaekJoon</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+        <div class="imgzone">
+            <img src="imgsrc/개.png" alt="동물" style="width: 15%;" >
+            <img src="imgsrc/고양이.png" alt="동물" style="width: 15%;">
+            <img src="imgsrc/free-icon-chameleon-375066.png" alt="동물" style="width: 15%;">
+            <img src="imgsrc/free-icon-hamster-720870.png" alt="동물" style="width: 15%;">
+                <div style="float:right; float:right; margin-top: 3%;">
+                    <div style="font-size: 0.6em; margin: -10%;" class="card-header">이름 : 심동훈</div>
+                    <div style="font-size: 0.6em; margin: -10%;" class="card-body">학 번 : 2018250026</div> 
+                    <div style="font-size: 0.6em; margin: -10%;" class="card-footer">학년 : 2학년</div>
+                </div>
+                
+        </div>
+    
+    <form id = "appendMessage"> 
+        <p style="font-size: 100%;">
+            <label for="sel_Location">지역선택 :</label>
+            <select id="sel_Location">
+                <optgroup label="ㄱ"></optgroup>
+                <option selected>고양시</option>
+                <option>과천시</option>
+                <option>광명시</option>
+                <option>광주시</option>
+                <option>구리시</option>
+                <option>군포시</option>
+                <option>김포시</option>
+                <optgroup label="ㄴ"></optgroup>
+                <option>남양주시</option>
+                <optgroup label="ㄷ"></optgroup>
+                <option>동두천시</option>
+                <optgroup label="ㅂ"></optgroup>
+                <option>부천시</option>
+                <optgroup label="ㅅ"></optgroup>
+                <option>성남시</option>
+                <option>수원시</option>
+                <option>시흥시</option>
+                <optgroup label="ㅇ"></optgroup>
+                <option>안산시</option>
+                <option>안성시</option>
+                <option>안양시</option>
+                <option>양주시</option>
+                <option>여주시</option>
+                <option>오산시</option>
+                <option>용인시</option>
+                <option>의왕시</option>
+                <option>의정부시</option>
+                <option>이천시</option>
+                <optgroup label="ㅍ"></optgroup>
+                <option>파주시</option>
+                <option>평택시</option>
+                <option>포천시</option>
+                <optgroup label="ㅎ"></optgroup>
+                <option>하남시</option>
+                <option>화성시</option>
+            </select>
+            <button onclick="getData()" 
+            style="font-size: 1em; padding: 0%;" 
+            type="button" class="btn btn-outline-primary">병원 찾기</button>
+        </p>
+    </form>
+    
+    <div id="grandParentNode">
+    </div>
+</body>
+</html>
